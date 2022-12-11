@@ -59,7 +59,8 @@ for i = 1 : max_iter
 
     xml = x;
     eml = ee;
-    %L2 = L2/1.05;  % balance the prformance and the efficiency
+    %
+    L2 = L2/1.05;  % balance the prformance and the efficiency
     % E-step
     tie = y-Ax-wp1/rho;
     [U, D, V] = svd(tie, 'econ');
