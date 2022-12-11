@@ -4,7 +4,7 @@ clc;
 
 %addpath(genpath('WSNR'));
 addpath('Dataset');
-addpath('Prox_fun');
+addpath('Myfuns');
 
 Image_row_NUM   = 96;
 Image_column_NUM  = 84;

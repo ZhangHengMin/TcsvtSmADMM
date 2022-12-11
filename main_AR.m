@@ -2,8 +2,8 @@ close all;
 clear all;
 
 
-addpath('AR_Gray_50by40');
-addpath('myfuns');
+addpath('AR_Gray');
+addpath('Myfuns');
 
 % Image size and dim
 Image_row_NUM = 50;
@@ -22,11 +22,11 @@ DAT = zeros(NN,Class_Sample_NUM,Class_NUM);
 for r = 1:Class_NUM
     for t = 1:Class_Sample_NUM
         if r < 10
-            string = ['.\AR_Gray_50by40\AR' int2str(0) int2str(0) int2str(r) '-' int2str(t) '.tif'];
+            string = ['.\AR_Gray\AR' int2str(0) int2str(0) int2str(r) '-' int2str(t) '.tif'];
         elseif r < 100
-            string = ['.\AR_Gray_50by40\AR' int2str(0) int2str(r) '-' int2str(t) '.tif'];
+            string = ['.\AR_Gray\AR' int2str(0) int2str(r) '-' int2str(t) '.tif'];
         else
-            string = ['.\AR_Gray_50by40\AR' int2str(r) '-' int2str(t) '.tif'];
+            string = ['.\AR_Gray\AR' int2str(r) '-' int2str(t) '.tif'];
         end
         A = imread(string,'tif');
         A = im2double(A);
